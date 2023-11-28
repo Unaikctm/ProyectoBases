@@ -1,12 +1,13 @@
 package clases;
 
-public class Proiektuak {
+public class Proiektua {
 	private int id;
 	private String izena;
 	private String ebaluazioa;
 	private String ikasturtea;
 	private String moduluak;
 	private boolean activo;
+	
 	public int getId() {
 		return id;
 	}
@@ -43,7 +44,7 @@ public class Proiektuak {
 	public void setActivo(boolean activo) {
 		this.activo = activo;
 	}
-	public Proiektuak(int id, String izena, String ebaluazioa, String ikasturtea, String moduluak, boolean activo) {
+	public Proiektua(int id, String izena, String ebaluazioa, String ikasturtea, String moduluak, boolean activo) {
 		super();
 		this.id = id;
 		this.izena = izena;
@@ -51,6 +52,10 @@ public class Proiektuak {
 		this.ikasturtea = ikasturtea;
 		this.moduluak = moduluak;
 		this.activo = activo;
+	}
+	
+	public Proiektua() {
+		
 	}
 	@Override
 	public String toString() {
