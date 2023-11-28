@@ -3,7 +3,7 @@ package clases;
 public class Ikaslea {
 	private int id;
 	private String izena;
-	private String abizenak;
+	private String abizena;
 	private String taldea;
 	private boolean activo;
 	public int getId() {
@@ -18,16 +18,16 @@ public class Ikaslea {
 	public void setIzena(String izena) {
 		this.izena = izena;
 	}
-	public String getApellido() {
-		return abizenak;
+	public String getAbizena() {
+		return abizena;
 	}
-	public void setApellido(String apellido) {
-		this.abizenak = apellido;
+	public void setAbizena(String apellido) {
+		this.abizena = abizena;
 	}
-	public String getGrupo() {
+	public String getTaldea() {
 		return taldea;
 	}
-	public void setGrupo(String grupo) {
+	public void setTaldea(String grupo) {
 		this.taldea = grupo;
 	}
 	public boolean isActivo() {
@@ -36,17 +36,20 @@ public class Ikaslea {
 	public void setActivo(boolean activo) {
 		this.activo = activo;
 	}
-	public Ikaslea(int id, String izena, String apellido, String grupo, boolean activo) {
+	public Ikaslea(int id, String izena, String abizena, String taldea, boolean activo) {
 		super();
 		this.id = id;
 		this.izena = izena;
-		this.abizenak = apellido;
-		this.taldea = grupo;
+		this.abizena = abizena;
+		this.taldea = taldea;
 		this.activo = activo;
+	}
+	public Ikaslea() {
+		
 	}
 	@Override
 	public String toString() {
-		return "Alumno [id=" + id + ", izena=" + izena + ", apellido=" + abizenak + ", grupo=" + taldea + ", activo="
+		return "Alumno [id=" + id + ", izena=" + izena + ", apellido=" + abizena + ", grupo=" + taldea + ", activo="
 				+ activo + "]";
 	}
 	

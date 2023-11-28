@@ -11,7 +11,7 @@ import java.sql.SQLException;
 		public void conectar() throws ClassNotFoundException, SQLException {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			final String HOST="jdbc:mysql://localhost/";
-			final String BBDD="hernatolista";
+			final String BBDD="ethazi_zehar";
 			final String USERNAME="root";
 			final String PASSWORD="";
 			
