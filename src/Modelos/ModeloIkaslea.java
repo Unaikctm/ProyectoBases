@@ -27,7 +27,7 @@ public class ModeloIkaslea extends Conector {
 			}
 			return proiektuak;
 		}catch (Exception e) {
-			System.out.println("No se ha podido ejecutar la query");
+			System.out.println("No se ha podido ejecutar la querie");
 		}
 		
 		return null;
