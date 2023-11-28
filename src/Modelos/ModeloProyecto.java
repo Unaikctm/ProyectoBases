@@ -9,6 +9,7 @@ import conector.Conector;
 public class ModeloProyecto extends Conector{
 	
 	public ArrayList<Proiektuak> selectAll(){
+		return null;
 		
 	}
 }
