@@ -5,7 +5,7 @@ public class Ikaslea {
 	private String izena;
 	private String abizena;
 	private String taldea;
-	private boolean activo;
+	private boolean aktibo_dago;
 	public int getId() {
 		return id;
 	}
@@ -30,11 +30,11 @@ public class Ikaslea {
 	public void setTaldea(String grupo) {
 		this.taldea = grupo;
 	}
-	public boolean isActivo() {
-		return activo;
+	public boolean isAktibo() {
+		return aktibo_dago;
 	}
-	public void setActivo(boolean activo) {
-		this.activo = activo;
+	public void setAktibo(boolean activo) {
+		this.aktibo_dago = activo;
 	}
 	public Ikaslea(int id, String izena, String abizena, String taldea, boolean activo) {
 		super();
@@ -42,7 +42,7 @@ public class Ikaslea {
 		this.izena = izena;
 		this.abizena = abizena;
 		this.taldea = taldea;
-		this.activo = activo;
+		this.aktibo_dago = activo;
 	}
 	public Ikaslea() {
 		
@@ -50,7 +50,7 @@ public class Ikaslea {
 	@Override
 	public String toString() {
 		return "Alumno [id=" + id + ", izena=" + izena + ", apellido=" + abizena + ", grupo=" + taldea + ", activo="
-				+ activo + "]";
+				+ aktibo_dago + "]";
 	}
 	
 }
