@@ -6,7 +6,7 @@ public class Proiektuak {
 	private String ebaluazioa;
 	private String ikasturtea;
 	private String moduluak;
-	private boolean activo;
+	private boolean aktibo_dago;
 	public int getId() {
 		return id;
 	}
@@ -37,11 +37,11 @@ public class Proiektuak {
 	public void setModuluak(String moduluak) {
 		this.moduluak = moduluak;
 	}
-	public boolean isActivo() {
-		return activo;
+	public boolean isAktibo() {
+		return aktibo_dago;
 	}
-	public void setActivo(boolean activo) {
-		this.activo = activo;
+	public void setAktibo(boolean activo) {
+		this.aktibo_dago = activo;
 	}
 	public Proiektuak(int id, String izena, String ebaluazioa, String ikasturtea, String moduluak, boolean activo) {
 		super();
@@ -50,12 +50,12 @@ public class Proiektuak {
 		this.ebaluazioa = ebaluazioa;
 		this.ikasturtea = ikasturtea;
 		this.moduluak = moduluak;
-		this.activo = activo;
+		this.aktibo_dago = activo;
 	}
 	@Override
 	public String toString() {
 		return "Proiektuak [id=" + id + ", izena=" + izena + ", ebaluazioa=" + ebaluazioa + ", ikasturtea=" + ikasturtea
-				+ ", moduluak=" + moduluak + ", activo=" + activo + "]";
+				+ ", moduluak=" + moduluak + ", activo=" + aktibo_dago + "]";
 	}
 	
 
