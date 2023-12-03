@@ -12,16 +12,16 @@ public class ModeloIkaslea extends Conector {
 		ArrayList<Ikaslea> proiektuak = new ArrayList<Ikaslea>();
 		
 		try {
-			PreparedStatement st = getCon().prepareStatement("select * from clientes");
+			PreparedStatement st = getCon().prepareStatement("select * from ikasleak");
 			ResultSet rs = st.executeQuery();
 			
 			while (rs.next()) {
 				Ikaslea ikaslea = new Ikaslea();
-				ikaslea.setId(rs.getInt(1));
-				ikaslea.setIzena(rs.getString(2));
-				ikaslea.setAbizena(rs.getString(3));
-				ikaslea.setTaldea(rs.getString(4));
-				ikaslea.setActivo(rs.getBoolean(5));
+				ikaslea.setId(rs.getInt("id"));
+				ikaslea.setIzena(rs.getString("izena"));
+				ikaslea.setAbizena(rs.getString("abizena"));
+				ikaslea.setTaldea(rs.getString("taldea"));
+				ikaslea.setAktibo(rs.getBoolean("aktibo_dago"));
 				
 				proiektuak.add(ikaslea);
 			}
