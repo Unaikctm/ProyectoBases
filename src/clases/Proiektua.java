@@ -1,6 +1,6 @@
 package clases;
 
-public class Proiektuak {
+public class Proiektua {
 	private int id;
 	private String izena;
 	private String ebaluazioa;
@@ -43,7 +43,7 @@ public class Proiektuak {
 	public void setAktibo(boolean activo) {
 		this.aktibo_dago = activo;
 	}
-	public Proiektuak(int id, String izena, String ebaluazioa, String ikasturtea, String moduluak, boolean activo) {
+	public Proiektua(int id, String izena, String ebaluazioa, String ikasturtea, String moduluak, boolean activo) {
 		super();
 		this.id = id;
 		this.izena = izena;
@@ -51,6 +51,10 @@ public class Proiektuak {
 		this.ikasturtea = ikasturtea;
 		this.moduluak = moduluak;
 		this.aktibo_dago = activo;
+	}
+	
+	public Proiektua() {
+		
 	}
 	@Override
 	public String toString() {
